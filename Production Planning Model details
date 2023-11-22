@@ -1,0 +1,34 @@
+ Define Main Classes:
+
+    Order Class: Represents an order placed by demand planning/costumer service .
+    Product Class: Represents a product (SKU) to be manufactered,packed or shipped.
+    Manufacturing Class: Represents the manufacturing process of products.
+    Inventory Class: Represents the inventory management system.
+
+2. Class Attributes and Methods:
+
+    Order Class:
+        Attributes: Order ID, Products (SKUs), Quantity per products, Customer details (Name, country,external_id, Status,Country...), Creation Date, Country.
+        Methods: Create Order, Update Status, load order.
+
+    Product Class:
+        Attributes: Product ID, Description, Quality_release_duration,Net_weight,Conversion_rate,type(Regular, copacked) , .
+        Methods: Update Stock,Update Batch, Get Details, .
+
+    Manufacturing Class:
+        Attributes: Production lines, Manufacturing capacity, etc.
+        Methods: Produce Product, Update Manufacturing Status, etc.
+
+    Inventory Class:
+        Attributes: List of available products, Stock levels per Product per Batch,  , .
+        Methods: Add Product to Inventory, Remove Product, Manage Stock Levels, .
+
+3. Interactions between Classes:
+
+    Order -> Product: An order contains one or more products.
+    Product -> Manufacturing: Products are manufactured through the manufacturing process.
+    Product -> Inventory: Products are added to inventory once manufactured and removed .
+    Order -> Inventory: Inventory is updated when orders are fulfilled.
+    
+
+

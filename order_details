@@ -1,0 +1,1 @@
+ each order has several product, and a quantity per product, everything is in a csv file  imported that contain tabular data starting from order_id,product i ,quantity i, Loading date, Costumer_details 
